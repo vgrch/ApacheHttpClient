@@ -5,12 +5,14 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 
+@Service
 public interface ApacheHttpClient {
 
     public String sendRequest(String url, ApacheHttpClientDirectly.HttpRequestMethod method) throws Exception;

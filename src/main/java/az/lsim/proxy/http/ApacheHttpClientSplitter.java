@@ -2,10 +2,12 @@ package az.lsim.proxy.http;
 
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.impl.client.CloseableHttpClient;
+import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
 
+@Service
 public class ApacheHttpClientSplitter implements ApacheHttpClient {
 
 
